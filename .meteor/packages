@@ -8,3 +8,7 @@ meteor-platform
 aldeed:collection2
 aldeed:autoform
 iron:router
+email
+twbs:bootstrap
+check
+naxio:flash
