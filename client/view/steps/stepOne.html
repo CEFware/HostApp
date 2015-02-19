@@ -3,12 +3,18 @@
     {{> header}}
     <div class="row">
     </div>
-    <div class="col-lg-offset-6 col-lg-5">
-E-mail
-<br>
-<a href="/step-two" class="btn btn-success btn-lg">Next >></a>
-    </div>
-    <div class="col-lg-1">
+    <div class="col-lg-offset-4 col-lg-4">
+      {{#autoForm collection="Marketplaces" id="stepOne" type="insert"}}
+      <fieldset>
+        <legend><b>1st STEP:</b></legend>
+        {{> afQuickField name="email"}}
+        <div>
+          <button type="submit" class="btn btn-primary"><small>(1 of 3)</small> <b>NEXT ></b></button>
+        </div>
+      </fieldset>
+      {{/autoForm}}
+     </div>
+    <div class="col-lg-4">
     </div>
     <div class="row">
     </div>

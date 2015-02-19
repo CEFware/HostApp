@@ -3,12 +3,23 @@
     {{> header}}
     <div class="row">
     </div>
-    <div class="col-lg-offset-6 col-lg-5">
-1st & 2nd name, pass + re-type, country & language
-<br>
-<a href="/step-three" class="btn btn-success btn-lg">Next >></a>
-     </div>
-    <div class="col-lg-1">
+    <div class="col-lg-offset-4 col-lg-4">
+      {{#autoForm collection="Marketplaces" doc=this id="stepTwo" type="update"}}
+      <fieldset>
+        <legend><b>2nd STEP:</b></legend>
+        {{> afQuickField name="firstName"}}
+        {{> afQuickField name="lastName"}}
+        {{> afQuickField name="password"}}
+        {{> afQuickField name="confirmPassword"}}
+        {{> afQuickField name="country"}}
+        {{> afQuickField name="language"}}
+        <div>
+          <button type="submit" class="btn btn-primary"><small>(2 of 3)</small> <b>NEXT ></b></button>
+        </div>
+      </fieldset>
+      {{/autoForm}}
+    </div>
+    <div class="col-lg-4">
     </div>
     <div class="row">
     </div>

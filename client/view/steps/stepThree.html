@@ -3,12 +3,19 @@
     {{> header}}
     <div class="row">
     </div>
-    <div class="col-lg-offset-6 col-lg-5">
-marketplace type & name
-<br>
-<a href="#" class="btn btn-success btn-lg">Generate marketplace</a>
-     </div>
-    <div class="col-lg-1">
+    <div class="col-lg-offset-4 col-lg-4">
+      {{#autoForm collection="Marketplaces" doc=this id="stepThree" type="update"}}
+      <fieldset>
+        <legend><b>3rd STEP:</b></legend>
+        {{> afQuickField name="marketplaceType"}}
+        {{> afQuickField name="marketplaceName"}}
+        <div>
+          <button type="submit" class="btn btn-primary"><small>(3 of 3)</small> <b>Go to my marketplace!</b></button>
+        </div>
+      </fieldset>
+      {{/autoForm}}
+    </div>
+    <div class="col-lg-4">
     </div>
     <div class="row">
     </div>

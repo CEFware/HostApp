@@ -1,6 +1,10 @@
 //var supportEmail="serhiy.khvashchuk@gmail.com";
 var supportEmail="meteor.test.mailbox@gmail.com";
 
+Meteor.startup(function(){
+console.log(Marketplaces.find().fetch());
+});
+
 Meteor.methods({
 
     sendEmail: function (doc) {
