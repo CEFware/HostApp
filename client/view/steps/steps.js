@@ -13,9 +13,13 @@ AutoForm.addHooks(['stepTwo'],{
 AutoForm.addHooks(['stepThree'],{
     onSuccess: function (operation, result, template){
 	//show cogs
-//	template.$().
-	//make meteor run sh to clone the marketplace -> show cogs -> send to new shop 
-	//Meteor.call('getTheRoute',result, function (route) {Router.go(route);});
+	template.$('.btn').prop("disabled","disabled");
+	template.$('.btn').addClass("disabled");
+	template.$('.placeForCogs').html('<i class="fa fa-refresh fa-spin"></i>');
+	//disable the button
+
+	//save data to file --> run sh to clone the marketplace --> send to new shop 
+	Meteor.call('getTheRoute',Router.current().params._id, function (error, result) {Router.go("/external/"+result);});
     }
 });
 

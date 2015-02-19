@@ -16,6 +16,7 @@ Marketplaces.permit(['insert']).apply();
 
 //anybody may update only empty fields
 Marketplaces.permit(['update']).ifEmpty().apply();
+//Marketplaces.permit(['update']).apply(); //this for testing 
 
 
 
