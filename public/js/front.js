@@ -1,3 +1,14 @@
+/* Animate elements in #price-plan */
+$('#price-plan .price-figure').css('opacity', 0).one('inview', function(isInView) {
+    if (isInView) {$(this).addClass('animated fadeInUp delayp1');}
+});
+
+$('#price-plan .heading .label').css('opacity', 0).one('inview', function(isInView) {
+    if (isInView) {$(this).addClass('animated fadeInDown delayp6');}
+});
+
+
+
 if ($.cookie("theme_csspath")) {
     $('link#theme-stylesheet').attr("href", $.cookie("theme_csspath"));
 }

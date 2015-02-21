@@ -11,5 +11,5 @@ AutoForm.addHooks(['contactForm'],{
 });
 
 Template.home.rendered = function() {
-   $('#jsToLoad').html('<script type="text/javascript" src="/js/jquery.cookie.js"></script><script type="text/javascript" src="/js/owl.carousel.min.js"></script><script type="text/javascript" src="/js/front.js"></script>');
+   $('#jsToLoad').html('<script type="text/javascript" src="/js/jquery.cookie.js"></script><script type="text/javascript" src="/js/jquery.inview.min.js"></script><script type="text/javascript" src="/js/owl.carousel.min.js"></script><script type="text/javascript" src="/js/front.js"></script>');
 };
