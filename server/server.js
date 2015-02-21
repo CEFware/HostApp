@@ -29,8 +29,8 @@ Meteor.methods({
 	fs=Npm.require('fs');
 	path=Npm.require('path');
 	dirName=path.resolve('.');
-	dirName=dirName.substring(0,dirName.indexOf('.'));
-	fs.writeFile(dirName+'private/marketplaces/'+objMar._id+'.json', JSON.stringify(objMar, null, 4), function (err){
+	dirName=dirName.substring(0,dirName.indexOf('HostApp'));
+	fs.writeFile(dirName+'marketplaces/'+objMar._id+'.json', JSON.stringify(objMar, null, 4), function (err){
 	    if (err) {
 		console.log(err);
 	    }else{

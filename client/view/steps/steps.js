@@ -13,8 +13,8 @@ AutoForm.addHooks(['stepTwo'],{
 AutoForm.addHooks(['stepThree'],{
     onSuccess: function (operation, result, template){
 	//show cogs
-	template.$('.btn').prop("disabled","disabled");
-	template.$('.btn').addClass("disabled");
+	template.$('.btn-lg').prop("disabled","disabled");
+	template.$('.btn-lg').addClass("disabled");
 	template.$('.placeForCogs').html('<i class="fa fa-refresh fa-spin"></i>');
 	//disable the button
 

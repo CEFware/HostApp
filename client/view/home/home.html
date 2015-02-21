@@ -1,31 +1,347 @@
 <template name="home">
-  <div class="wrapper">
-    {{> header}}
-    <div class="jumbotron text-center">
-      <h1>Here we'll start our journey!</h1>
-      <p>Get own marketplace in few clicks</p>
-      <a href="/step-one" class="btn btn-success btn-lg">START</a>
+  {{> header}}
+     <!-- *** SLIDER ***
+	_________________________________________________________ -->
+
+    <div id="slider" class="owl-carousel owl-theme">
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide1.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide2.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide3.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide4.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide5.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="#">
+                <img src="/img/slide6.jpg" alt="" class="img-responsive">
+            </a>
+        </div>
+
+
     </div>
-    <div class="col-lg-offset-6 col-lg-5">
-      {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"}}
-      <fieldset>
-	<legend><b>Contact Us</b></legend>
-	<div>
-	  {{flash '1'}}
-	</div>
-	{{> afQuickField name="email"}}
-	{{> afQuickField name="message" rows=5}}
-	<div>
-	  <button type="submit" class="btn btn-primary">Submit</button>
-	  <button type="reset" class="btn btn-default">Reset</button>
-	</div>
-      </fieldset>
-      {{/autoForm}}
-    </div>
-    <div class="col-lg-1">
-    </div>
-    <div class="row">
-    </div>
-  </div><!--//wrapper-->
+    <!-- /#slider -->
+
+    <!-- *** SLIDER END *** -->
+
+    <div id="all">
+
+        <!-- *** ADVANTAGES ***
+_________________________________________________________ -->
+	<a id="how-it-works"></a>
+
+        <div id="advantages">
+
+            <div class="container">
+
+                <div class="col-md-12">
+
+                    <div class="box text-center">
+                        <h1 class="text-uppercase">How it works</h1>
+
+                        <p>With our help you may start own marketplace in minutes <br>and start serving community with needed goods or services being your own boss.</p>
+
+
+
+                        <div class="same-height-row row">
+                            <div class="col-sm-3">
+                                <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                    <div class="icon"><i class="fa fa-heart-o"></i>
+                                    </div>
+                                    <h4><a href="text.html">Satisfied customers</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                    <div class="icon"><i class="fa fa-tags"></i>
+                                    </div>
+                                    <h4><a href="text.html">Best prices</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                    <div class="icon"><i class="fa fa-send-o"></i>
+                                    </div>
+                                    <h4><a href="faq.html">Next day delivery</a></h4>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-3">
+                                <div class="box same-height clickable no-border text-center-xs text-center-sm">
+                                    <div class="icon"><i class="fa fa-refresh"></i>
+                                    </div>
+                                    <h4><a href="contact.html">Free returns for 3 months</a></h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.row -->
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            <!-- /.container -->
+
+        </div>
+        <!-- /#advantages -->
+
+        <!-- *** ADVANTAGES END *** -->
+
+        <!-- *** CONTENT ***
+	    _________________________________________________________
+	    -->
+
+	<a id="success-stories"></a>
+        <div id="content">
+            <div class="container">
+                <div class="col-sm-12">
+
+                    <div class="box text-center">
+                        <h1 class="text-uppercase">Success stories</h1>
+			<p>Go over the shops of your successful clients to see example of how successful your marketplace may be.</p>
+                    </div>
+
+                    <div class="row products">
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="image">
+                                    <a href="http://some-outside.url" target="_blank">
+                                        <img src="/img/product1.jpg" alt="" class="img-responsive image1">
+                                    </a>
+                                </div>
+                                <!-- /.image -->
+                                <div class="text">
+                                    <h3><a href="http://some-outside.url" target="_blank">
+					Shop name and short blurb about the shop - may get it from DB</a></h3>
+                                    <p class="price">(product marketplace)</p>
+                                </div>
+                                <!-- /.text -->
+                                <div class="ribbon sale">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="image">
+                                    <a href="http://some-outside.url" target="_blank">
+                                        <img src="/img/product2.jpg" alt="" class="img-responsive image2">
+                                    </a>
+                                </div>
+                                <!-- /.image -->
+                                <div class="text">
+                                    <h3><a href="http://some-outside.url" target="_blank">
+					Shop name and short blurb about the shop - may get it from DB</a></h3>
+                                    <p class="price">(rent marketplace)</p>
+                                </div>
+                                <!-- /.text -->
+                                <div class="ribbon sale">
+                                    <div class="theribbon">NEW</div>
+                                    <div class="ribbon-background"></div>
+                                </div>
+                                <!-- /.ribbon -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="image">
+                                    <a href="http://some-outside.url" target="_blank">
+                                        <img src="/img/product3.jpg" alt="" class="img-responsive image3">
+                                    </a>
+                                </div>
+                                <!-- /.image -->
+                                <div class="text">
+                                    <h3><a href="http://some-outside.url" target="_blank">
+					About the shop - may get it from DB</a></h3>
+                                    <p class="price">(product marketplace)</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-3 col-sm-4">
+                            <div class="product">
+                                <div class="image">
+                                    <a href="http://some-outside.url" target="_blank">
+                                        <img src="/img/product4.jpg" alt="" class="img-responsive image4">
+                                    </a>
+                                </div>
+                                <!-- /.image -->
+                                <div class="text">
+                                    <h3><a href="http://some-outside.url" target="_blank">
+					Shop name and short blurb</a></h3>
+                                    <p class="price">(services marketplace)</p>
+                                </div>
+                                <!-- /.text -->
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+
+
+                    </div>
+                    <!-- /.products -->
+
+                </div>
+                <!-- /.col-sm-12 -->
+
+            </div>
+            <!-- /.container -->
+
+
+
+
+
+
+        <!-- ******PRICE PLAN****** -->
+	<a id="prices"></a>
+        <section id="price-plan" class="price-plan section">
+            <div class="container text-center">
+                <h2 class="title">30 day FREE trial with all plans!</h2>
+                <p class="intro">Tempo's pricing is simple and you can change your plan at any time. </p>
+                <div class="price-cols row">
+                    <div class="item col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="heading">Basic</h3>
+                        <div class="content">
+                            <p class="price-figure"><span class="currency">$</span><span class="number">5</span><span class="unit">/month</span></p>
+                            <ul class="list-unstyled feature-list">
+                                <li>1 user</li>
+                                <li>10 GB storage</li>
+                                <li>Email support</li>
+                                <li>Free update</li>
+                            </ul>
+                            <a class="btn btn-cta btn-cta-primary" href="#">Sign Up <br /><span class="extra">30 day free trial</span></a>
+                        </div><!--//content-->
+                    </div><!--//item-->
+
+                    <div class="item col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="heading">Plus <span class="label label-custom">Popular</span></h3>
+                        <div class="content">
+                            <p class="price-figure"><span class="currency">$</span><span class="number">10</span><span class="unit">/month</span></p>
+                            <ul class="list-unstyled feature-list">
+                                <li>10 users</li>
+                                <li>30 GB storage</li>
+                                <li>Email priority support</li>
+                                <li>Free update</li>
+                            </ul>
+                            <a class="btn btn-cta btn-cta-primary" href="#">Sign Up <br /><span class="extra">30 day free trial</span></a>
+                        </div><!--//content-->
+                    </div><!--//item-->
+
+                    <div class="item col-md-4 col-sm-4 col-xs-12">
+                        <h3 class="heading">Premium</h3>
+                        <div class="content">
+                            <p class="price-figure"><span class="currency">$</span><span class="number">25</span><span class="unit">/month</span></p>
+                            <ul class="list-unstyled feature-list">
+                                <li>Unlimited user</li>
+                                <li>100 GB storage</li>
+                                <li>24/7 support</li>
+                                <li>Free update</li>
+                            </ul>
+                            <a class="btn btn-cta btn-cta-primary" href="#">Sign Up <br /><span class="extra">30 day free trial</span></a>
+                        </div><!--//content-->
+                    </div><!--//item-->
+                </div><!--//row-->
+            </div><!--//container-->
+        </section><!--//price-plan-->
+
+
+
+
+
+
+
+
+
+
+            <!-- *** PROMO BAR ***
+_________________________________________________________ -->
+
+            <div class="bar background-image-fixed-2 no-mb color-white text-center">
+                <div class="dark-mask"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="icon icon-lg"><i class="fa fa-bookmark"></i>
+                            </div>
+                            <h1>It is free to start</h1>
+                            <p class="lead">Have own marketplace up and running before your coffee has a chance to cool down.</p>
+			    <p>And pay for it from your future earnings.</p>
+                            <p class="text-center">
+                                <a href="/step-one/" class="btn btn-primary btn-lg">Open your marketplace now!</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** PROMO BAR END *** -->
+
+	    <div class="box" id="contact">
+	      <div class="row">
+		<a id="contact"></a>
+		<h1 class="text-center">Contact us</h1>
+                <p class="lead text-center">Are you curious about something?</p>
+                <p class="text-center">Please feel free to contact us - our customer service center is working for you 24/7.</p>
+		    <div class="col-lg-offset-4 col-lg-4">
+
+		      {{#autoForm schema=contactFormSchema id="contactForm" type="method" meteormethod="sendEmail"}}
+		      <fieldset>
+			<div>
+			  {{flash '1'}}
+			</div>
+			{{> afQuickField name="email"}}
+			{{> afQuickField name="message" rows=5}}
+			<div class="text-center">
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <button type="reset" class="btn btn-default">Reset</button>
+			</div>
+		      </fieldset>
+		      {{/autoForm}}
+		    </div>
+
+	      </div>
+	    </div>
+        </div>
+        <!-- /#content -->
+
   {{> footer}}
+  </div><!--/all-->
+  <div id="jsToLoad"></div>
 </template>

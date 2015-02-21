@@ -1,3 +1,85 @@
 <template name="footer">
-FOOTER
+        <div id="footer">
+            <div class="container">
+                <div class="col-md-3 col-sm-6">
+                    <h4>Legal</h4>
+
+                    <ul>
+                        <li><a href="/terms">Terms and conditions</a></li>
+                        <li><a href="/privacy">Privacy policy</a></li>
+                    </ul>
+
+                    <hr class="hidden-md hidden-lg hidden-sm">
+
+                </div>
+                <!-- /.col-md-3 -->
+
+                <div class="col-md-3 col-sm-6">
+                    <h4>Stay in touch</h4>
+
+                    <p class="social">
+                        <a href="#"><i class="fa fa-facebook-square"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-google-plus"></i></a>
+                    </p>
+
+                    <hr class="hidden-md hidden-lg hidden-sm">
+
+                </div>
+                <!-- /.col-md-3 -->
+
+                <div class="col-md-3 col-sm-6">
+
+                    <h4>Where to find us</h4>
+
+                    <p><strong>Obaju Ltd.</strong>
+                        <br>13/25 New Avenue
+                        <br>New Heaven
+                        <br>England
+                        <br>
+                        <strong>Great Britain</strong>
+                    </p>
+
+                    <a href="/#contact">Go to contact page</a>
+
+                    <hr class="hidden-md hidden-lg hidden-sm">
+
+                </div>
+                <!-- /.col-md-3 -->
+
+
+
+                <div class="col-md-3 col-sm-6">
+
+                    <h4>Get the news</h4>
+
+                    <p class="text-muted">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+		    <div>
+		      {{flash '2'}}
+		    </div>
+		    {{#autoForm collection="Emails" id="Emails" type="insert"}}
+                    <div class="input-group {{#if afFieldIsInvalid name='email'}}has-error{{/if}}">
+		      {{> afFieldInput name="email"}}
+                      <span class="input-group-btn">
+			<button class="btn btn-default" type="submit">Subscribe!</button>
+		      </span>
+                    </div>
+		    {{/autoForm}}
+                </div>
+                <!-- /.col-md-3 -->
+            </div>
+            <!-- /.container -->
+        </div>
+
+        <!-- *** COPYRIGHT *** -->
+
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-12">
+                    <p class="pull-left">&copy; {{currentYear}}. CEF.</p>
+                    <p class="pull-right">
+                    </p>
+                </div>
+            </div>
+        </div>
 </template>

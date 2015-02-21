@@ -1,23 +1,38 @@
 <template name="stepOne">
-  <div class="wrapper">
-    {{> header}}
-    <div class="row">
-    </div>
-    <div class="col-lg-offset-4 col-lg-4">
-      {{#autoForm collection="Marketplaces" id="stepOne" type="insert"}}
-      <fieldset>
-        <legend><b>1st STEP:</b></legend>
-        {{> afQuickField name="email"}}
-        <div>
-          <button type="submit" class="btn btn-primary"><small>(1 of 3)</small> <b>NEXT ></b></button>
+  {{> header}}
+  <div id="all">
+    <div id="content">
+      <div class="container">
+
+        <div class="col-md-12">
+          <div class="box">
+            <div class="row">
+
+	      <div class="col-lg-offset-4 col-lg-4">
+		{{#autoForm collection="Marketplaces" id="stepOne" type="insert"}}
+		<fieldset>
+		  <legend><b>1st STEP:</b></legend>
+		  {{> afQuickField name="email" class="input-lg"}}
+		  <div>
+		    <button type="submit" class="btn btn-primary btn-lg"><small>(1 of 3)</small> <b>NEXT ></b></button>
+		  </div>
+		</fieldset>
+		{{/autoForm}}
+	      </div>
+
+		
+            </div>
+          </div>
         </div>
-      </fieldset>
-      {{/autoForm}}
-     </div>
-    <div class="col-lg-4">
+      </div>
+
     </div>
-    <div class="row">
-    </div>
+
+
+
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    <br><br><br><br><br><br>
+    {{> footer}}
   </div><!--//wrapper-->
-  {{> footer}}
 </template>
