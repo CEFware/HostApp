@@ -25,12 +25,14 @@ Meteor.methods({
 
     getTheRoute : function (id) {
 	var objMar=Marketplaces.findOne({_id:id});
+	objMar.color="green";
+	objMar.public={};
+	objMar.public.color=objMar.color;
+	objMar.public.marketplaceName=objMar.marketplaceName;
 	//save data to file
 	fs=Npm.require('fs');
-	path=Npm.require('path');
-	dirName=path.resolve('.');
-	dirName=dirName.substring(0,dirName.indexOf('HostApp'));
-	fs.writeFile(dirName+'marketplaces/'+objMar._id+'.json', JSON.stringify(objMar, null, 4), function (err){
+
+	fs.writeFile(Meteor.settings.private.path+objMar._id+'.json', JSON.stringify(objMar, null, 4), function (err){
 	    if (err) {
 		console.log(err);
 	    }else{

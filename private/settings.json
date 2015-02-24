@@ -1,0 +1,11 @@
+{
+    "public":
+    {
+	"marketplaceName": "gfgsfdsgdf",
+	"color":"green"
+    },
+    "private":
+    {
+	"path":"/home/shkomg/marketplaces/"
+    }
+}
