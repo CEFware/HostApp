@@ -1,11 +1,36 @@
 {
-    "public":
-    {
-	"marketplaceName": "gfgsfdsgdf",
-	"color":"green"
-    },
-    "private":
-    {
-	"path":"/home/shkomg/marketplaces/"
-    }
+        "public": {
+            "development":
+            {
+                "marketplaceName": "DEVELOPMENT",
+                "color":"green"
+            },
+            "staging":
+            {
+                "marketplaceName": "STAGING",
+                "color":"green"
+            },
+            "production":
+            {
+                "marketplaceName": "PRODUCTION",
+                "color":"green"
+            }
+        },
+        "private": {
+            "development":
+            {
+                "path":"/home/shkomg/marketplaces/",
+                "supportEmail":"meteor.test.mailbox@mail.com"
+            },
+            "staging":
+            {
+                "path":"/root/marketplaces/",
+                "supportEmail":"meteor.test.mailbox@mail.com"
+            },
+            "production":
+            {
+                "path":"/home/shkomg/marketplaces/",
+                "supportEmail":"meteor.test.mailbox@mail.com"
+            }
+        }
 }
