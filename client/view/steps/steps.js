@@ -25,11 +25,11 @@ AutoForm.addHooks(['stepThree'],{
 
 
 Template.stepTwo.rendered= function (){
-//    this.$('select[name=country]').select2({placeholder:"Select country of operation"});
-    this.$('select[name=language]').select2({minimumResultsForSearch: -1,placeholder:"Marketplace main language"});
-    this.$('select[name=marketplaceType]').select2({minimumResultsForSearch: -1, placeholder:"Choose marketplace type"});
+//    this.$('select[name=country]').select2({placeholder:TAPi18n.__("Select country of operation")});
+    this.$('select[name=language]').select2({minimumResultsForSearch: -1,placeholder:TAPi18n.__("Marketplace main language")});
+    this.$('select[name=marketplaceType]').select2({minimumResultsForSearch: -1, placeholder:TAPi18n.__("Choose marketplace type")});
 };
 
 Template.stepThree.rendered= function (){
-    this.$('select[name=marketplaceType]').select2({minimumResultsForSearch: -1, placeholder:"Choose marketplace type"});
+    this.$('select[name=marketplaceType]').select2({minimumResultsForSearch: -1, placeholder:TAPi18n.__("Choose marketplace type")});
 };

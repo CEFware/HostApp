@@ -11,11 +11,11 @@
 	      <div class="col-lg-offset-4 col-lg-4">
 		{{#autoForm collection="Marketplaces" doc=this id="stepThree" type="update"}}
 		<fieldset>
-		  <legend><b>3rd STEP:</b></legend>
+		  <legend><b>{{t "3rd STEP"}}:</b></legend>
 		  {{> afQuickField name="marketplaceType" class="input-lg"}}
 		  {{> afQuickField name="marketplaceName" class="input-lg"}}
 		  <div>
-		    <button type="submit" class="btn btn-primary btn-lg"><small class="placeForCogs">(3 of 3)</small> <b>Go to my marketplace!</b></button>
+		    <button type="submit" class="btn btn-primary btn-lg"><small class="placeForCogs">(3 {{t "of"}} 3)</small> <b>{{t "Go to my marketplace!"}}</b></button>
 		  </div>
 		</fieldset>
 		{{/autoForm}}

@@ -17,6 +17,6 @@ Template.footer.helpers({
 
 AutoForm.addHooks(['Emails'],{
     onSuccess: function (){
-        Flash.success(2,"Thank you!",2000);
+        Flash.success(2,TAPi18n.__("Thank you!"),2000);
     }
 });

@@ -6,7 +6,7 @@ Template.home.helpers({
 
 AutoForm.addHooks(['contactForm'],{
     onSuccess: function (){
-	Flash.success(1,"Thank you!",2000);
+	Flash.success(1,TAPi18n.__("Thank you!"),2000);
     }
 });
 

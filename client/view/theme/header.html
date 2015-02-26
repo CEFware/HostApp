@@ -4,12 +4,12 @@
             <div class="navbar-header">
 
                 <a class="navbar-brand home" href="/">
-                    <img src="/img/logo.png" alt="Minimal logo" class="hidden-xs hidden-sm">
-                    <img src="/img/logo-small.png" alt="Minimal logo" class="visible-xs visible-sm"><span class="sr-only">Minimal - go to homepage</span>
+                    <img src="/img/logo.png" alt={{t "logo"}} class="hidden-xs hidden-sm">
+                    <img src="/img/logo-small.png" alt={{t "logo"}} class="visible-xs visible-sm"><span class="sr-only">{{t "go to homepage"}}</span>
                 </a>
                 <div class="navbar-buttons">
                     <button type="button" class="navbar-toggle btn-primary" data-toggle="collapse" data-target="#navigation">
-                        <span class="sr-only">Toggle navigation</span>
+                        <span class="sr-only">{{t "Toggle navigation"}}</span>
                         <i class="fa fa-align-justify"></i>
                     </button>
                 </div>
@@ -19,14 +19,14 @@
             <div class="navbar-collapse collapse" id="navigation">
 
                 <ul class="nav navbar-nav navbar-left">
-                    <li><a href="/#how-it-works">How it works</a></li>
-                    <li><a href="/#success-stories">Success stories</a></li>
-                    <li><a href="/#prices">Prices</a></li>
-                    <li><a href="/#contact">Contact</a></li>
+                    <li><a href="/#how-it-works">{{t "How it works"}}</a></li>
+                    <li><a href="/#success-stories">{{t "Success stories"}}</a></li>
+                    <li><a href="/#prices">{{t "Prices"}}</a></li>
+                    <li><a href="/#contact">{{t "Contact"}}</a></li>
                 </ul>
 		{{#if showButton}}
 		<div class="hidden-sm hidden-lg text-center" id="basket-overview">
-		  <a href="/step-one/" class="btn btn-primary navbar-btn">Get started</a>
+		  <a href="/step-one/" class="btn btn-primary navbar-btn">{{t "Get started"}}</a>
 		</div>
 		{{/if}}
 
@@ -34,7 +34,7 @@
             <!--/.nav-collapse -->
 	    {{#if showButton}}
             <div class="navbar-collapse collapse right" id="basket-overview">
-              <a href="/step-one/" class="btn btn-primary navbar-btn">Get started</a>
+              <a href="/step-one/" class="btn btn-primary navbar-btn">{{t "Get started"}}</a>
             </div>
 	    {{/if}}
  

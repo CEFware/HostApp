@@ -11,10 +11,10 @@
 	      <div class="col-lg-offset-4 col-lg-4">
 		{{#autoForm collection="Marketplaces" id="stepOne" type="insert"}}
 		<fieldset>
-		  <legend><b>1st STEP:</b></legend>
+		  <legend><b>{{t "1st STEP"}}:</b></legend>
 		  {{> afQuickField name="email" class="input-lg"}}
 		  <div>
-		    <button type="submit" class="btn btn-primary btn-lg"><small>(1 of 3)</small> <b>NEXT ></b></button>
+		    <button type="submit" class="btn btn-primary btn-lg"><small>(1 {{t "of"}} 3)</small> <b>{{t "NEXT"}} ></b></button>
 		  </div>
 		</fieldset>
 		{{/autoForm}}

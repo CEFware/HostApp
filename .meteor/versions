@@ -10,6 +10,7 @@ blaze@2.0.4
 blaze-tools@1.0.2
 boilerplate-generator@1.0.2
 callback-hook@1.0.2
+cfs:http-methods@0.0.27
 check@1.0.4
 coffeescript@1.0.5
 ddp@1.0.14
@@ -59,6 +60,7 @@ routepolicy@1.0.4
 session@1.0.5
 spacebars@1.0.5
 spacebars-compiler@1.0.4
+tap:i18n@1.4.0
 templating@1.0.11
 tracker@1.0.5
 twbs:bootstrap@3.3.2
