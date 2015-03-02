@@ -8,8 +8,11 @@ Template.changeLang.events({
 
 Template.changeLang.helpers({
     languages : function() {
-	return [{ "code":"en", "name":"English", "selected": (TAPi18n.getLanguage()=="en" ? "selected" : "")},
-		{ "code":"ua", "name":"Українська", "selected": (TAPi18n.getLanguage()=="ua" ? "selected" : "")}];
+	var arrR=[];
+	$.each(TAPi18n.getLanguages(),function (index,value) {
+	    arrR.push({"code":index, "name":value.name, "selected":(TAPi18n.getLanguage()===index ? "selected" : "")});
+	});
+	return arrR;
     }
 });
 
