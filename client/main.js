@@ -5,9 +5,9 @@ getUserLanguage = function () {
 };
 
 Meteor.startup(function() {
-//preparing for internationalization
 
-    Session.set("showLoadingIndicator", true);
+    //preparing for internationalization
+    Session.set("showLoadingIndicator", true); //to show that change of language started and user needs to wait till it finishes
 
     TAPi18n.setLanguage(getUserLanguage())
       .done(function () {
@@ -19,7 +19,7 @@ Meteor.startup(function() {
       });
 
 
-//working with settings.json
+    //working with settings.json
     var settings = {
         "public": {
             "development":
@@ -55,13 +55,7 @@ Meteor.startup(function() {
 	};
 	console.log("Using [ " + environment + " ] Meteor.settings");
 	
-//setting the right title & color to the html head -> we need to write own html head before app to start in order to have it working quick   
+	//setting the right title
 	document.title=Meteor.settings.public.marketplaceName;
-	var sc = document.createElement("link");
-	sc.setAttribute("rel", "stylesheet");
-	sc.setAttribute("id", "theme-stylesheet");
-	sc.setAttribute("type", "text/css");
-	sc.setAttribute("href", "/css/style."+Meteor.settings.public.color+".css");
-	document.head.appendChild(sc);
     });
 });
