@@ -1,21 +1,21 @@
 AutoForm.addHooks(['stepOne'],{
-    onSuccess: function (operation, result, template){
+    onSuccess: function (formType, result){
 	Router.go('stepTwo', {_id:result});
     }
 });
 
 AutoForm.addHooks(['stepTwo'],{
-    onSuccess: function (operation, result, template){
+    onSuccess: function (formType, result){
 	Router.go('stepThree', {_id:Router.current().params._id});
     }
 });
 
 AutoForm.addHooks(['stepThree'],{
-    onSuccess: function (operation, result, template){
+    onSuccess: function (formType, result){
 	//show cogs
-	template.$('.btn-lg').prop("disabled","disabled");
-	template.$('.btn-lg').addClass("disabled");
-	template.$('.placeForCogs').html('<i class="fa fa-refresh fa-spin"></i>');
+	this.template.$('.btn-lg').prop("disabled","disabled");
+	this.template.$('.btn-lg').addClass("disabled");
+	this.template.$('.placeForCogs').html('<i class="fa fa-refresh fa-spin"></i>');
 	//disable the button
 
 	//save data to file --> run sh to clone the marketplace --> send to new shop 
